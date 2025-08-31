@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background: linear-gradient(rgba(0,0,0,0.5),#2b2b2b),url("Kenyans\ hold\ concert\ to\ remember\ those\ killed\ in\ protests.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center; 
+}
+.logo {
+   position: fixed;    
+  top: 20px;            
+  left: 20px;          
+  width: 100px;         
+  height: auto;
+  border-radius: 15px;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+  object-fit: cover;    
+  z-index: 1000; 
+}
+.logo_text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.logo_text h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.logo_text p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-style: italic;
+}
+.logobtn{
+    margin: 70px auto 0;
+}
+.logobtn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0px;
+    color: white;
+    border:.5px solid #ffff;
+    z-index: 1;
+    position: relative;
+    transition: color 0.5s;
+}
+.logobtn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+    transition: 0.5s;
+}
+.logobtn a:hover span{
+    width: 100%;
+}
+.logobtn a:hover{
+    color: black; 
+}
+#navBar{
+    width:180px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background:#1e1e1e ;
+    transition:0.5s ;
+    z-index: 2;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: white;
+}
+#menu{
+    width: 40px;
+    height: 30px;
+    background: #2b2b2b;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius:3px ;
+    z-index: 3;
+    cursor: pointer;
+}
+#menu img{
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width:770px){
+        .logo_text h1 {
+    font-size: 44px;
+    margin: 0;
+    }
+    .logobtn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+#PEV{
+    width: 100%;
+    height: 10%;
+    padding: 70px 0;
+    background: linear-gradient(#FAF9F6,#727272);
+}
+.election{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.election p{
+    margin: auto;
+    font-size: 20px;
+    color:red;
+    font-weight: bold;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.election p::after{
+    content:'';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#650a0a,#fff);
+    position: absolute;
+     top:-20px;
+    left:0;
+    z-index: -1;
+    transform:rotate(10deg);
+    border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.election h1{
+    font-size: 50px;
+}
+#PEV {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.Violence {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Kenya,
+.video-item {
+  flex:48%;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Kenya video,
+.video-item video {
+  width: 100%;
+  height: 30%;
+  display: block;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Kenya,
+  .video-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    
+  }
+}
+#gbv{
+  background: linear-gradient(rgba(189, 186, 186, 0.5),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+.gender{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.gender p{
+  margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+}
+.gender p::after{
+  content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#cbd6dc,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.gender h1{
+  font-size: 70px;
+}
+.text p{
+  font-size: 20px;
+}
+.genderbox{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.genders{
+  flex-basis: 50%;
+}
+.genders_image{
+  flex-basis: 50%;
+  margin: auto;
+}
+.genders_image img{
+  width: 70%;
+  border-radius: 10px;
+}
+.genders h1{
+text-align: left;
+margin-bottom: 10px;
+font-weight: 120;
+color: #1e1e1e;
+}
+.gender_description{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  
+}
+#civic_ed{
+    background: linear-gradient(rgba(189, 186, 186, 0.119),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+.civic{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.civic p{
+  margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+}
+.civic p::after{
+  content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#cbd6dc,#7b7777);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.civic h1{
+  font-size: 70px;}
+.education{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.image{
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+}
+.image img{
+  width: 100%;
+  border-radius: 7px;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(8, 6, 6, 0.5),#727272);
+  opacity: 0;
+  transition: 1s;
+}
+.image:hover .overlay{
+ opacity: 1;
+}
+.ed_description{
+  width: 80%;
+  position: absolute;
+  bottom: 40%;
+  left:50% ;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+hr{
+  background:white ;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+.ed_description p{
+  font-size: 15px;
+}
+.image:hover .ed_description{
+      bottom: 40%;
+      opacity: 1;
+}
+@media screen and (max-width:770px){
+  .image{
+    flex-basis: 100%;
+    margin-bottom:30px;
+  }
+  .ed_description p{
+  font-size: 12px;
+}
+hr{
+  margin: 5px auto;}}
+#form{
+   background: linear-gradient(rgba(77, 75, 75, 0.119),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+.formdesc{
+ text-align: center;
+  padding-bottom: 70px;
+}
+.formdesc p{
+   margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.formdesc p::after{
+    content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#1d1d1e,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.formdesc h1{
+  font-size: 50px;}
+#contact{
+   background: linear-gradient(rgba(255, 245, 245, 0.5),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+.info{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.info p{
+   margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.info p::after{
+   content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#131313,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.info h{
+  font-size: 70px;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    max-width: 450px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  .contact-form h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    box-sizing: border-box;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+
+  .contact-form input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  .contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  .social-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  .social-links .twitter {
+    color: #1DA1F2;
+  }
+
+  .social-links .instagram {
+    color: #C13584;
+  }
+
+  .social-links .facebook {
+    color: #1877F2;
+  }
+
+  .social-links .tiktok {
+    color: #000000;
+  }
+
+#upload{
+   background: linear-gradient(rgba(77, 75, 75, 0.119),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.uploaddesc{
+ text-align: center;
+  padding-bottom: 70px;
+}
+
+.uploaddesc p{
+   margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.uploaddesc p::after{
+    content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#1d1d1e,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+
+.uploaddesc h1{
+  font-size: 50px;
+}
+
+#content-gallery{
+   background: linear-gradient(rgba(77, 75, 75, 0.119),#cecece);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallerydesc{
+ text-align: center;
+  padding-bottom: 70px;
+}
+
+.gallerydesc p{
+   margin: auto;
+  font-size: 30px;
+  color: #111213;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.gallerydesc p::after{
+    content: '';
+  width:50px ;
+  height: 35px;
+  background: linear-gradient(#1d1d1e,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+   border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+
+.gallerydesc h1{
+  font-size: 50px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;   /* raise it higher from the bottom */
+  right: 20px;    /* distance from right */
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 60px;      /* size of icon */
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366; /* WhatsApp green */
+  padding: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
+}
